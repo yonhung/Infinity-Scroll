@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: whitesmoke;
+}
+
+/* 
+  ====
+  标题
+  ====
+*/
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 2em;
+}
+
+@media screen and (min-width:64em) {
+  h1 {
+    font-size: 2.3rem;
+    line-height: initial;
+  }
+}
+
+/* 
+   =======
+   加载画面
+   =======
+*/
+.loader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background:rgba(255, 255, 255, .7);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 8em;
+}
+
+.loader--bottom {
+  text-align: center;
+}
+
+.loader--bottom img {
+  width: 4em;
+}
+/* 
+   =======
+   图片容器
+   =======
+*/
+.image-container {
+  margin: 0 1em;
+}
+
+.image-container img {
+  width: 100%;
+  margin-bottom: .4em;
+}
+
+@media screen and (min-width:64em) {
+  .image-container {
+    margin: 0 28em;
+  }
+}
